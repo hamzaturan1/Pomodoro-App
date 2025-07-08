@@ -1,0 +1,59 @@
+@startuml
+class com.example.pomodoroapp.ExampleUnitTest {
++ void addition_isCorrect()
+}
+note top of com.example.pomodoroapp.ExampleUnitTest
+
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ 
+end note
+
+
+class com.example.pomodoroapp.SettingsActivity {
+- EditText workTimeEditText
+- EditText breakTimeEditText
+- Button saveButton
+- SharedPreferences sharedPreferences
+# void onCreate(Bundle)
+}
+
+
+class com.example.pomodoroapp.MainActivity {
+- TextView timerTextView
+- ProgressBar progressBar
+- Button startButton
+- CountDownTimer countDownTimer
+- long timeRemainingInMillis
+- boolean timerRunning
+- long initialTime
+# void onCreate(Bundle)
+- void loadTimerSettings()
+- void startTimer()
+- void pauseTimer()
+- void resetTimer()
+- void startBreak()
+- void updateCountDownText()
+- void updateProgressBar()
+- void showInfoDialog()
+}
+
+
+class com.example.pomodoroapp.ExampleInstrumentedTest {
++ void useAppContext()
+}
+note top of com.example.pomodoroapp.ExampleInstrumentedTest
+
+ * Instrumented test, which will execute on an Android device.
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ 
+end note
+
+
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.example.pomodoroapp.SettingsActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.example.pomodoroapp.MainActivity
+@enduml

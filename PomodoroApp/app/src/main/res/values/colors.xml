@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#03D148</color>
+    <color name="colorPrimaryVariant">#0700D4</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="colorProgressBar">#FF0000</color>
+    <color name="butonrengi">#ED102A</color>
+    <color name="butonrengi2">#33A303</color>
+</resources>
